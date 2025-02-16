@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YojnaX - One Stop to Validate, Innovate, and Elevate!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #192653 0%, #192653 60%, #1f2f66 100%);
+            padding: 2rem;
+            position: relative;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #192653;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            height: 40px;
+            margin-left: 20px;
+        }
+
+        .get-started-btn {
+            background-color: #FFB800;
+            color: #192653;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            text-align: center;
+        }
+
+        .main-logo {
+            width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .action-button {
+            background: #ffc107;
+            color: #1e2a4a;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 300px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-button:hover {
+            transform: scale(1.02);
+            background: #ffcd38;
+        }
+
+        .wide-button {
+            width: 400px;
+        }
+
+        @media (max-width: 1024px) {
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .action-button, .wide-button {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+
+        /* Update hero section background color */
+        .hero-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #192653;
+            color: white;
+        }
+
+        /* Add these new styles */
+        .action-btn-link {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .action-btn-link:hover {
+            text-decoration: none;
+        }
+
+        .action-btn {
+            background-color: #FFB800;
+            color: #192653;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            min-width: 200px;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            background-color: #ffc326;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="get-started-btn">GET STARTED</button>
+    </nav>
+
+    <div class="container">
+        <img src="assests\logo.jpg" alt="YojnaX Main Logo" class="main-logo">
+        
+        <h1 class="title">One Stop to Validate, Innovate, and Elevate! 🚀</h1>
+        
+        <p class="description">
+            YojnaX is your AI-powered startup assistant, designed to turn ideas into actionable plans with real-time validation, 
+            strategic insights, and investor matchmaking. Whether you're brainstorming, refining your business model, or 
+            preparing for funding, YojnaX simplifies the process with data-driven guidance and expert-backed feedback.
+        </p>
+
+        <div class="button-container">
+            <a href="https://mock-interviwer-f6nu.vercel.app/dashboard" class="action-button-link">
+                <button class="action-button">
+                    Idea Validation →
+                </button>
+            </a>
+            <a href="http://192.168.1.125:8501" class="action-button-link">
+                <button class="action-button">
+                    Brainstorming →
+                </button>
+            </a>
+            <a href="http://127.0.0.1:5000" class="action-button-link">
+                <button class="action-button">
+                    Investor Connections →
+                </button>
+            </a>
+            <a href="http://127.0.0.1:5000" class="action-button-link">
+                <button class="action-button">
+                    Pitch Decks →
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
